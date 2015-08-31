@@ -1,0 +1,124 @@
+﻿<%@ Master Language="VB" CodeFile="administrador.master.vb" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html>
+<html class="csstransforms no-csstransforms3d csstransitions"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="menu/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="menu/css/menu.css">
+    <script type="text/javascript" src="menu/js/jquery.js"></script>
+	<script type="text/javascript" src="menu/js/function.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div id="wrap">
+            <header>
+        <div class="inner relative">
+                        <img src="menu/images/logo.png" data-src="images/logo.png" style="width: 265px" />
+                       <a id="menu-toggle" class="button dark" href="#"><i class="icon-reorder"></i></a>
+                        <nav id="navigation">
+                <ul id="main-menu">
+                    <li class="current-menu-item"><a href="Index.aspx">Inicio</a></li>
+                    <li class="parent">
+
+						        <a href="#">Mantenedores</a>
+						<ul class="sub-menu">
+							<li><a href="#">Faena</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroFaena.aspx">Registrar Faena</a></li>
+                            <li><a href="EditarFaena.aspx">Editar Faena</a></li>
+                                </ul>         		</li>
+
+                    			<li><a href="#">Trabajador</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroTrabajador.aspx">Registrar Trabajador</a></li>
+                            <li><a href="EditarTrabajador.aspx">Editar Trabajador</a></li>
+                                </ul></li>
+
+                               <li><a href="#">Equipo</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroEquipo.aspx">Registrar Equipo</a></li>
+                            <li><a href="EditarEquipo.aspx">Editar Equipo</a></li>
+                                </ul></li>
+
+                             <li><a href="#">Cargo</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroCargo.aspx">Registrar Cargo</a></li>
+                            <li><a href="EditarCargo.aspx">Editar Cargo</a></li>
+                                </ul></li>
+
+                               	<li><a href="#">Especialidad</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroEspecialidad.aspx">Registrar Especialidad</a></li>
+                            <li><a href="EditarEspecialidad.aspx">Editar Especialidad</a></li>
+                                </ul></li>
+
+                             	<li><a href="#">Servicio</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroServicio.aspx">Registrar Servicio</a></li>
+                            <li><a href="EditarServicio.aspx">Editar Servicio</a></li>
+                                </ul></li>
+
+                         	<li><a href="#">Empresa Cliente</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroCliente.aspx">Registrar Empresa Cliente</a></li>
+                            <li><a href="EditarCliente.aspx">Editar Empresa Cliente</a></li>
+                                </ul></li>
+
+                            <li><a href="#">Usuario</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroUsuario.aspx">Registrar Usuario</a></li>
+                        
+                                </ul></li>
+
+                            <li><a href="#">Región</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroRegion.aspx">Registrar Region</a></li>
+                            <li><a href="EditarRegion.aspx">Editar Region</a></li>
+                                </ul></li>
+                            <li><a href="#">Ciudad</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroCiudad.aspx">Registrar Ciudad</a></li>
+                            <li><a href="EditarCiudad.aspx">Editar Ciudad</a></li>
+                                </ul></li>
+                            <li><a href="#">Clasficación</a>
+                                <ul class="sub-menu">
+                           <li><a href="RegistroClasificacion.aspx">Registrar clasificación</a></li>
+                            <li><a href="EditarClasificacion.aspx">Editar clasificación</a></li>
+                                </ul></li>
+                                                            
+                            </ul>
+                        	<li class="parent"><a href="#">Listados</a>
+                                <ul class="sub-menu">
+                                    <li><a href="ListarFaena.aspx">Faena</a></li>
+                           		<li><a href="ListarTrabajador.aspx">Trabajador</a></li>
+                                <li><a href="ListarCargo.aspx">Cargo</a></li>
+                               	<li><a href="ListarCliente.aspx">Empresa Cliente</a></li>
+                                </ul>
+
+                            <%--    <li class="parent"><a href="#">Procesos</a>
+                                <ul class="sub-menu">
+                                <li><a href="RegistroCargo.aspx">Editar Trabajador en Faena</a></li>
+                           		
+                                                               </ul>--%>
+                        			<li ><a href="CambiarContraseña.aspx">Cambiar Contraseña</a></li>
+			
+					<li ><a href="../login.aspx">Cerrar sesión</a></li>
+				
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>	
+</div>    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   
+</body>
+</html>

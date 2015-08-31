@@ -1,0 +1,20 @@
+/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+
+/*Icono flecha*/
+@font-face{font-family:'icomoon';src:url("fonts/icomoon.eot");src:url("fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("fonts/icomoon.ttf") format('truetype'),url("fonts/icomoon.woff") format('woff'),url("fonts/icomoon.svg#icomoon") format('svg');font-weight:normal;font-style:normal}
+.icomoon,[class*="icon-"],.list-unordered li:before,.ik_select_link:after,.intro-select2-link .ik_select_link_inner:after,.intro-select-osx-link .ik_select_link_text:after,.intro-select-osx-link .ik_select_link_text:before,.intro-select-ie-link:after{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-arrow-down:before,.ik_select_link:after,.intro-select2-link .ik_select_link_inner:after,.intro-select-osx-link .ik_select_link_text:before,.intro-select-ie-link:after{content:"\e602"}
+
+/*mas sobre el tamaño del drop*/
+.ik_select_link:after,.intro-select2-link .ik_select_link_inner:after{position:absolute;top:50%;right:10px;font-size:20px;line-height:24px;margin-top:-11px}
+/*si lo saco se alcanza a ver el drop sin estilo*/
+.ik_select_link.ik_select_link_focus{-webkit-box-shadow:inset 0 0 0 2px  rgb(61, 157, 179),inset 0 0 0 3px #fff;box-shadow:inset 0 0 0 2px #3e5318,inset 0 0 0 3px #000000}
+/*Si lo saco se va a la mierda el estilo*/
+
+.intro-select1-link,.intro-select1-dd .ik_select_list,.intro-select2-link .ik_select_link_inner,.intro-select2-dd .ik_select_list{-webkit-border-radius:5px;border-color:#000000;background:#FFF;font-size:15px;line-height:24px;color:#000000}
+.intro-select1-link,.intro-select2-link .ik_select_link_inner{position:relative;padding:5px/*Alto drop */ 50px 20px 30px;}
+.intro-select1-dd{top:61px;} /*separacion espacio de busqueda */ 
+/*Separacion items drop*/
+.intro-select1-dd .ik_select_list li,.intro-select2-dd .ik_select_list li{padding:2px 50px 2px 30px;} 

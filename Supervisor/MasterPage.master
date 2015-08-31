@@ -1,0 +1,71 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Prevencionista_MasterPage" %>
+
+<!DOCTYPE html>
+<html class="csstransforms no-csstransforms3d csstransitions"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="menu/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="menu/css/menu.css">
+    <script type="text/javascript" src="menu/js/jquery.js"></script>
+	<script type="text/javascript" src="menu/js/function.js"></script>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <br /><br />
+    <div id="wrap">
+            <header>
+        <div class="inner relative">
+                        <img src="menu/images/logo.png" data-src="images/logo.png" style="width: 216px; height: 58px; margin-left: 0px" />
+                       <a id="menu-toggle" class="button dark" href="#"><i class="icon-reorder"></i></a>
+                        <nav id="navigation">
+                <ul id="main-menu">
+                    <li class="current-menu-item"><a href="index.aspx">Inicio</a></li>
+                    <li class="parent">
+
+						<a href="#">Cuasi Accidentes</a>
+						<ul class="sub-menu">
+							<li><a href="RegistroCuasiAccidente.aspx">Registrar cuasi accidente</a></li>
+					
+                            
+						</ul>
+					</li>
+					<li><a href="#">Accidentes</a>
+                        <ul class="sub-menu">
+							<li><a href="RegistroAccidente.aspx">Registrar Accidente</a></li>
+							<li><a href="TasaFrequencia.aspx">Tasa Frequencia</a></li>
+		                    <li><a href="TasaGravedad.aspx">Tasa Gravedad</a></li>
+                            <li><a href="Accidentabilidad.aspx">Accidentabilidad</a></li>
+		
+                            
+						</ul>
+					</li>
+					<li class="parent">
+						<a href="Reportes">Reportes</a>
+						<ul class="sub-menu">
+		<li><a href="ReporteCuasi.aspx">Cuasi Accidente Fechas</a></li>
+                            <li><a href="ReporteCuasiFaena.aspx">Cuasi Accidente Faenas</a></li>
+							<li><a href="ReporteAcci.aspx">Accidente</a></li>
+                            <li><a href="ReporteAccidenteFaena.aspx">Accidente Faena</a></li>
+						</ul>
+                        <li ><a href="CambiarContraseña.aspx">Cambiar Contraseña</a></li>
+			<li><a href="../login.aspx">Salir</a></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>	
+</div> 
+
+    <div>
+  
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+</body>
+</html>
